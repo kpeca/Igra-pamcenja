@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card");
 const brojac = document.getElementById("broj");
+const krajIgre = document.getElementById("finish");
 var broj = 0;
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -39,6 +40,12 @@ function flipCard() {
 
       lockBoard = false;
     }, 1500);
+  }
+
+  if (broj === 6) {
+    setTimeout(function () {
+      krajIgre.style.display = "block";
+    }, 500);
   }
 }
 
