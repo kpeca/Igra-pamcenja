@@ -21,7 +21,7 @@ body {
 }
 
 .card {
-  width: 24%;
+  width: 120px;
   height: 33.33%;
   position: relative;
   transform-style: preserve-3d;
