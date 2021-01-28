@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card");
-
+const brojac = document.getElementById("broj");
+var broj = 0;
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -27,6 +28,8 @@ function flipCard() {
   if (firstCard.dataset.value === secondCard.dataset.value) {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
+    broj++;
+    brojac.innerHTML = broj;
   } else {
     //it's not a match
     lockBoard = true;
