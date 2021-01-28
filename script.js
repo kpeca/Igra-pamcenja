@@ -44,7 +44,7 @@ function flipCard() {
 
   if (broj === 6) {
     setTimeout(function () {
-      krajIgre.style.display = "block";
+      krajIgre.style.display = "flex";
     }, 500);
   }
 }
