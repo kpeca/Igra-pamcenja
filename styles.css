@@ -11,18 +11,18 @@ body {
   width: 120vw;
   height: 120vh;
   background-color: black;
-  display: block;
   z-index: 333;
   display: none;
   align-items: center;
   justify-content: center;
 }
 .tekst {
+  margin-left: 20px;
   color: white;
   font-size: 3rem;
 }
 .container {
-  margin-left: 25px;
+  margin-left: 35px;
   display: flex;
   height: 100vh;
   width: 100vw;
