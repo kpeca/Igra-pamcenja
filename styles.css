@@ -7,23 +7,26 @@ body {
   background-color: #060ab2;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .memory-board {
-  width: 640px;
-  height: 640px;
+  position: relative;
+  left: 20px;
+  bottom: -100px;
+  width: 520px;
+  height: 520px;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
 }
 
 .card {
-  width: 25%;
-  height: 33.333%;
+  width: 20%;
+  height: 30%;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  margin: 4px;
 }
 .card img {
   width: 100%;
